@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet" />
+</head>
+<body class='contact'>
+    <div class="page-wrapper">
+        <nav>
+          <div id='active-page'>
+          <ul>
+            <li><a class='menu' href="index.html">Home</a></li><span> /</span>
+            <li><a class='menu' href="about.html">About</a></li><span> /</span>
+            <li><a class='menu active' href="contact.html">Contact</a></li>
+          </ul>
+          </div>
+        </nav>
+      <section class='contact-page'>
+        <h4>Please enter your contact information and answer the following optional quesitons below.</h4>
+        <form action='' method='post' id='myForm' name='myForm'> 
+          <fieldset id='formEntry'>
+            <legend>Contact Information</legend>
+              <div class='info-section'>
+                <label for='namefirst'>First Name:</label>
+                <input type='text' id='namefirst' name='namefirst' required onkeyup='manage(this)' placeholder='required'>
+                <label for='namelast'>Last Name:</label>
+                <input type='text' id='namelast' name='namelast' autofocus>
+                <label for='email'>Email:</label>
+                <input type='email' id='email' name='email' placeholder='required' required onkeyup='manage(this)'>
+                <label for='phone'>Phone:</label>
+                <input type='tel' id='phone' name='phone' placeholder="Don't forget the area code!">
+                <label for="comments">Comments or Additional Information:</label>
+					      <textarea id="comments" name="comments" placeholder='If none type NA' required onkeyup='manage(this)'></textarea>
+              </div>
+          </fieldset>
+          <fieldset>
+            <legend>Optional Details</legend>
+              <div class='optional-section'>
+               <p>Preferred Method of Communication:</p>
+               <div class='checkboxes'>
+              <label for='emails'>Email</label>
+              <input class='cb' type="checkbox" id='emails' name='box'>
+              <label for='phones'>Phone</label>
+              <input class='cb' type="checkbox" id='phones' name='box'>
+              <label for='either'>Either</label>
+              <input class='cb' type="checkbox" id='either' name='box'>
+               </div>
+              <label for="abtype">Preferred Meeting Type</label>	
+                  <select id="abtype" name="abtype">
+                    <option selected>Select one...</option>
+                    <option value="call">Phone call</option>
+                    <option value="face">Face to Face</option>
+                    <option value="virtual">Virtual Coffee</option>
+                    <option value="other">Other</option>
+                  </select> 
+                </div>
+              </fieldset>
+              <input class='submitBtn' type='submit' id='btSubmit' disabled value='Submit'>
+        </form>
+      </section>
+    </div>
+      <footer> 
+        <div>&#169; Israel Tech Challenge</div>
+        <div><p id='lang-used'>This page was created using</p></div>
+        <div class="footer-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li><span> /</span>
+          <li><a href="about.html">About</a></li><span> /</span>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>  
+        </div>    
+    </footer>
+    <script src="portfolio.js"></script> 
+</body>
+<script src="./formentry.js"></script>
+</html>

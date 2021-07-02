@@ -1,0 +1,328 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to bottom right, lightgray, white);
+  font-size: 1.25rem;
+  /*height: 100vh;*/
+  margin: 0;
+  padding: 0;
+  font-family: 'Neucha', cursive;
+}
+
+.page-wrapper {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+.index {
+  background: content-box radial-gradient(rgb(224, 194, 200), rgb(151, 167, 173));
+}
+
+#my-name {
+  text-align: center;
+}
+
+.card {
+  align-items: center;
+  background-image: linear-gradient(to bottom right,white,lightgray);
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 1);
+  box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 100px;
+  padding: 50px;
+}
+.card:hover {
+background:rgb(22, 0, 5);
+color: rgb(218, 118, 218);
+
+}
+
+.profile-image {
+  border-radius: 50%;
+  height: 200px;
+  margin: 50px;
+  width: 200px;
+  /*font-size: 32px;
+  */
+}
+
+.acct-links ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.acct-links li {
+  display: inline-block;
+}
+.acct-links li a {
+  display: block;
+  padding: 15px;
+  color:rgb(52, 49, 70);
+}
+
+.acct-links li a:hover {
+  background-color: greenyellow;
+  border-radius: 50%;
+}
+
+.ball {
+  margin: 0;
+  font-size: 50px;
+  z-index: 10;
+  cursor: grab;
+  cursor: -webkit-grab;
+}
+
+.about-page {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 2.5rem 0 0 0 ;
+  background: content-box linear-gradient(rgb(231, 217, 220), rgb(134, 150, 156));
+}
+
+.about-header{
+  color: rgb(70, 67, 67);
+  font-size: 3.5rem;
+  flex-basis: 30%;
+  text-align: center;
+  background-color: linear-gradient(rgb(231, 217, 220), rgb(134, 150, 156));
+  margin:1.5rem;
+  padding: 1.5rem;
+  border-radius: 2.5%;
+}
+
+.about-info {
+  color: black;
+  flex-basis: 70%;
+  padding: 1.5rem;
+}
+  
+.cities-page {
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  justify-content: space-between;
+  margin: 2.5rem 0 0 0 ;
+  background: content-box linear-gradient(rgb(231, 217, 220), rgb(134, 150, 156));
+}
+
+.cities-header{
+  color: rgb(70, 67, 67);
+  font-size: 3.5rem;
+  flex-basis: 30%;
+  text-align: center;
+  border-radius: 2.5%;
+  background-color: linear-gradient(rgb(231, 217, 220), rgb(134, 150, 156));
+  margin:1rem;
+  padding: 1.5rem;
+}
+
+.cities-info {
+  color: black;
+  flex-basis: 70%;
+  padding: 1.5rem;
+}
+
+.map-container {
+  display: block;
+  height: 400px;
+  width: 100%;
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+  height: 400px;
+  width: 100%;
+  background-color: rgb(170, 163, 160);
+}
+
+/*these are btns for the map*/
+.btns {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.btn {
+  background-color: #32383d;
+  color: white;
+  font-size: 20px;
+  padding: 5px 20px;
+  border-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.prev {
+  margin-right: 15px;
+}
+
+.btn:disabled {
+  background-color: transparent;
+  cursor: not-allowed;
+}
+
+.contact {
+  background: content-box linear-gradient(rgb(231, 217, 220), rgb(134, 150, 156));
+}
+
+.contact-page {
+  margin-top: 3rem;
+  background-color: rgb(180, 175, 182);
+  width:70%;
+  border-radius: 5%;
+  display: flex;
+  flex-flow:column nowrap;
+}
+
+fieldset {
+  border: solid 1px black;
+  margin:1.5rem;
+  border-radius: 10%;
+}
+
+legend {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+	margin-bottom: 1rem;
+	display: block;
+  text-align: center;
+}
+
+.contact-page p, [for='abtype'] {
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+
+label {
+	display: block;
+}
+
+h4 {
+  padding: 0 1.5rem;
+  margin-bottom: 0;
+}
+
+input:not([type='checkbox']), textarea, #abtype {
+  display: block;
+	border-radius: 10px;
+  font-size: 1em;
+  padding: 0 1rem;
+	margin-bottom: 2rem;
+	width: 20rem;
+  font-family: 'Neucha', cursive;
+}
+
+textarea {
+  height:8rem;
+  padding:1rem;
+}
+
+.checkboxes {
+  display: flex;
+  padding-top:0.5rem;
+}
+
+.submitBtn {
+  font-size: 1.5rem;
+  background-color: white;
+  margin:1.5rem;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 1rem;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-image: linear-gradient(to bottom right, lightgray, white);
+  border-bottom: 3px  solid rgb(68, 65, 65);
+}
+
+nav li {
+  display: inline-block;
+  text-align: center;
+  color: #000;
+}
+
+nav li a {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+  padding: 1.5px;
+  margin: 0;  
+}
+
+nav li a:hover {
+  border-bottom: 2px solid #555;
+  color: white;
+}
+.active {
+  border-bottom: 2px solid #555
+}
+
+.footer-nav {
+  text-align: center;
+  padding:0;
+}
+
+.footer-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.footer-nav li {
+  display: inline-block;
+  margin:0 ;
+  padding:0;
+}
+
+.footer-nav li a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  padding: 0;
+  color:rgb(52, 49, 70);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.footer-nav li a:hover {
+  color: rgb(213, 224, 235);
+}
+
+footer {
+  display: table;
+  width:100%;
+  padding:0;
+  margin:0;
+}
+
+footer div {
+  font-size: 1rem;
+  display: table-cell;
+  text-align: center;
+  padding:0;
+  margin:0;
+}
+
+
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="page-wrapper"> 
+        <nav> 
+          <div id='active-page'>
+          <ul>
+            <li><a class='menu' href="index.html">Home</a></li><span> /</span>
+            <li><a class='menu active' href="about.html">About</a></li><span> /</span>
+            <li><a class='menu' href="contact.html">Contact</a></li>
+          </ul>
+          </div>
+        </nav>
+      <section class='about-page'>
+        <h1 class='about-header'>About</h1>
+        <div class='about-info'>
+          <article>
+            <h1>Scientist, Engineer, Coder</h1>
+            <p>I spent my life as an expat, living and traveling the world.  At the end of 2020 I was able to fulfill one of my dreams and make aliyah.  I have an undergraduate degree in chemistry and a graduate degree in theoretical physics.  My career has allowed me to explore a variety of fields including petrochemical, engineering, startups, programming, and owning my own gym.
+           <p>I am interested in coding because it is fun.  I like to build things and solve problems.</p>
+          </article>
+          <article>
+           <h1>Personal Interests</h1>
+            <p>I enjoy working out, lifting heavy things, and walking on my hands.  I constantly seek ways to push my self physically, intellectually, and creatively.  I like to sew, paint, and tinker with interior design/decorating.</p>
+          </article>
+        </div>
+      </section>
+      <section class='cities-page'>
+          <h1 class='cities-header'>Cities of my Life</h1>
+          <article class='cities-info'>
+        <p>I was born in New Orleans, Louisiana and spent my early childhood in Norway and England.  I went to university in Texas followed by graduate school in Colorado.  My career took me through Arizona, California, New Jersey, and Georgia.  Finally, I am home in Israel.</p>
+          </article>
+      </section>
+    <h3>Maps of Cities I have called home</h3>
+    <div class='map-container' id='map' ></div>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDL01C-d2gO2tiPRoa9BFD1NUQVetnYZjE&callback=initMap&libraries=&v=weekly"
+      async>
+    </script>
+  <div class='btns'>
+    <button disabled class="btn prev" type="button">Previous</button>
+    <button class="btn next" type="button">Next</button>
+  </div>
+</div>
+<footer>
+<div>&#169; Israel Tech Challenge</div>
+<div><p id='lang-used'>This page was created using</p></div>
+<div class='footer-nav'>       
+  <ul>
+    <li><a href="index.html">Home</a></li><span> /</span>
+    <li><a href="about.html">About</a></li><span> /</span>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>  
+</div>
+</footer>
+<script src="portfolio.js"></script>
+<script src="./maps.js"></script>
+</body>
+</html>
